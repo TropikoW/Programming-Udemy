@@ -16,6 +16,9 @@ h1,h2,h3,p,a{
 h1{
     font-size: 3rem;
 }
+h1 span {
+    font-size: 1.8rem;
+}
 h2{
     font-size: 2.5rem;
 }
@@ -26,3 +29,6 @@ p,a{
     font-size: 1.8rem;
 }
 /* class */
+.title-page{
+    text-align: center;
+}
