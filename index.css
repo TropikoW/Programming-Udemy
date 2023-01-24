@@ -1,5 +1,10 @@
 :root{
-    --fontmain : 'Source Sans Pro', sans-serif;
+    --fontmain : 'Krub', sans-serif;
+    --colorwhite : #ffffff;
+    --colorblack : #212121;
+    --colorgray : #757575;
+    --colormain : #ffc107;
+    --colorsecundary : #0097a7;
 }
 *{
     box-sizing: border-box;
@@ -17,6 +22,7 @@ h1{
     font-size: 3rem;
 }
 h1 span {
+    
     font-size: 1.8rem;
 }
 h2{
@@ -31,4 +37,18 @@ p,a{
 /* class */
 .title-page{
     text-align: center;
+}
+.title-design{
+    text-align: center;
+}
+.container-nav{
+    background-color: var(--colorsecundary);
+}
+.nav-main a{
+    display: inline;
+    background-color: var(--colormain);
+}
+.container{
+    width: 120rem;
+    margin : 0 auto;
 }
