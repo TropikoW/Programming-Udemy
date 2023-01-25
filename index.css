@@ -44,9 +44,21 @@ p,a{
 .container-nav{
     background-color: var(--colorsecundary);
 }
+.nav-main{
+    display: flex;
+    justify-content: space-evenly;
+    ;
+}
 .nav-main a{
-    display: inline;
+    color: var(--colorwhite);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.nav-main a:hover{
     background-color: var(--colormain);
+    color: var(--colorblack);
 }
 .container{
     width: 120rem;
