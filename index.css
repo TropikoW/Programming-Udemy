@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 /* global */
 html{
     font-size: 62.5%;
@@ -47,7 +50,6 @@ p,a{
 .nav-main{
     display: flex;
     justify-content: space-evenly;
-    ;
 }
 .nav-main a{
     color: var(--colorwhite);
@@ -61,6 +63,20 @@ p,a{
     color: var(--colorblack);
 }
 .container{
-    width: 120rem;
+    max-width: 120rem;
     margin : 0 auto;
+}
+
+.container-hero{
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    padding: 2rem;
+}
+@media (max-width: 768px) {
+   .nav-main{
+    flex-direction: column;
+    text-align: center;
+   }
 }
