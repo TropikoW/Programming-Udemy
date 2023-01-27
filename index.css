@@ -6,14 +6,12 @@
     --colormain : #ffc107;
     --colorsecundary : #0097a7;
 }
-*{
+*,*:before,*:after{
     box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
-  }
 /* global */
 html{
     font-size: 62.5%;
@@ -72,7 +70,13 @@ p,a{
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
-    padding: 2rem;
+    position: relative;
+}
+.contain-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 20%);
 }
 @media (max-width: 768px) {
    .nav-main{
